@@ -1,0 +1,3 @@
+[submodule "externals/api"]
+	path = externals/api
+	url = https://github.com/ikamikaz3/MySportyCompanyAPI
