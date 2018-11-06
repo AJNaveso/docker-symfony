@@ -38,3 +38,12 @@ services:
         volumes_from:
             - php
             - nginx
+    phpmyadmin:
+        image: phpmyadmin/phpmyadmin
+        depends_on:
+        - db
+        environment:
+        - PMA_USER=root
+        - PMA_PASSWORD=root
+        ports:
+        - "8080:80"
