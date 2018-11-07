@@ -1,4 +1,4 @@
-FROM debian:jessie
+FROM debian:buster
 
 MAINTAINER Maxence POUTORD <maxence.poutord@gmail.com>
 
