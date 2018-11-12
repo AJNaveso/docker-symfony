@@ -15,6 +15,7 @@ RUN rm /etc/nginx/sites-enabled/default
 RUN echo "upstream php-upstream { server php:9000; }" > /etc/nginx/conf.d/upstream.conf
 
 RUN usermod -u 1000 www-data
+RUN chown -R www-data:www-data /var/www/symfony/public/images
 
 CMD ["nginx"]
 
