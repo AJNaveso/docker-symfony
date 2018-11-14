@@ -44,4 +44,4 @@ services:
         ports:
             - 8080:80
         environment:
-            MYSQL_HOST: db:3306;root;root
+            MYSQL_HOST: db:3306
