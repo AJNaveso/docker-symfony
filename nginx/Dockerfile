@@ -5,7 +5,7 @@ MAINTAINER Thomas BILLOT <thomas.billot@epitech.eu>
 RUN apt-get update && apt-get install -y \
     nginx \
     nginx-extras \
-    python-certbot-nginx 
+    python-certbot-nginx
 
 ADD nginx.conf /etc/nginx/
 ADD symfony.conf /etc/nginx/sites-available/
