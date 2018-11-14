@@ -39,12 +39,9 @@ services:
             - php
             - nginx
     phpmyadmin:
-        image: phpmyadmin/phpmyadmin
+        image: nazarpc/phpmyadmin
         container_name: phpmyadmin
-        environment:
-            - PMA_HOST=db
-        restart: always
         ports:
             - 8080:80
-        volumes:
-            - /sessions
+        environment:
+            MYSQL_HOST: db:3306;root;root
