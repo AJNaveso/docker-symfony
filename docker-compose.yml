@@ -19,6 +19,8 @@ services:
             args:
                 TIMEZONE: ${TIMEZONE}
         volumes:
+            - ${SSL_CERTS_PATH}:/etc/letsencrypt
+            - ${SSL_DATA_PATH}:/data/letsencrypt
             - ${SYMFONY_APP_PATH}:/var/www/symfony
             - ./logs/symfony:/var/www/symfony/app/logs
     nginx:
